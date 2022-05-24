@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title >Mídias em HTML</title>
+</head>
+<body>
+    <H1>Imagens dinâmicas</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente  e diminua o  tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagen flexível">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML.</p>
+    <audio preload="metadata" controls loop>
+      <source src="midia/Future King of Heaven - Zachariah Hickman.mp3" type="audio/mpeg"> 
+      <source src="midia/Future King of Heaven - Zachariah Hickman.mp3" type="audio/ogg"> 
+      <source src="midia/Future King of Heaven - Zachariah Hickman.mp3" type="audio/wav">
+    </audio>
+    <p>Infelismente seu navegador não consegue reproduzir áudio. <a href="midia/Future King of Heaven - Zachariah Hickman.mp3"> clique aqui para baixar o arquivo MP3.</a></p>
+    <h1>Inserindo víddeos hospedados localmente.</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="560" poster="imagens/barquinhos.jpg" preload="auto" controls loop>
+        <source src="videos/Meu-Video m4v.m4v" type="vídeo/m4v">
+        <source src="videos/Meu-Video mkv.mkv" type="vídeo/mkv">
+        <source src="videos/meu-video mp4.mp4" type="vídeo/mp4">
+        <source src="videos/Meu-Video webm.webm" type="vídeo/webm">
+    </video>
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos. <a href="videos/meu-video mp4.mp4"> clique aqui para baixar o vídeo em MP4.</a></p>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/a-Cbn65za5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas absolutas: centímetro(cm), milímetro(mm), polegada(in), pixel(px), ponto(pt), paica(pc)
+            
+            16px geralmente é um em
+            
+            medidas relativas:em(relatívo ao eme maiúsculo), ex(relativo ao tamanho do x), rem(relativo ao but), vw(largura da viewport(tela)),vh(altura da viewport), %
+            */
+            font-size: 1em; 
+            font-weight: bolder;
+            font-style: italic;
+            text-decoration: underline;
+            /* lighter, normal, bold, bolder */
+        }
+        h1{
+
+            /* abaixo  exepmlo de compilação dos comandos á cima.
+            Chama-se shorthand font e deve ser preechido nesta ordem: font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em "arial, helvetica, sans-serif";
+        }
+        h2{
+            font: bolder 3em "arial, helvetica sans-serif";
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat sed minus sequi illo harum perferendis odit aperiam quae, recusandae, architecto ipsum aliquam. Veniam at praesentium ratione id corrupti suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem accusantium sapiente quo, animi soluta vitae velit quis ipsam et quod sint tempora. Fugit amet minima voluptatem error iure blanditiis?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique sequi porro accusantium voluptatem repudiandae repellat molestiae, quasi voluptates dicta ea. Tempora, veritatis? Expedita eum mollitia officia placeat, sit molestiae ex!</p>
+    <h2>Subtítulo de Trabalhando com fontes</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque iure omnis voluptatem nostrum eveniet totam quidem aliquam minima repudiandae dicta et, quo perspiciatis labore odit consequuntur quia soluta sint corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis fuga dolorem ea molestias atque minima, quis laudantium, hic iusto sed dolore natus ipsam eum quia quod officia commodi id.</p>
+</body>
+</html>
