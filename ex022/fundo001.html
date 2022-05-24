@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        body{
+            background-image: url('imagens/wallpaper001.jpg');
+            background-size: 200px;
+            background-repeat: repeat;
+        }
+        div.quadrado{
+            background-color: rgb(159, 115, 139);
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+        }
+        
+        div#q1 {
+            background-image: linear-gradient(to bottom, rgb(254, 242, 251), rgb(159, 115, 139));
+        }
+        div#q2 {
+            background-image: url('imagens/pattern003.png');
+        }
+        div#q3 {
+            background-image: linear-gradient(to bottom, rgb(254, 242, 251), rgb(159, 115, 139));
+        }
+        
+        div.bloco{
+            background-image: url('imagens/wallpaper003.jpg');
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        div#b1 {
+            background-position: left top;
+        }
+        div#b2 {
+            background-position: left center;
+        }
+        div#b3 {
+            background-position: left bottom;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    
+    <div class="quadrado" id="q2">
+
+    </div>
+   
+    <div class="quadrado" id="q3">
+
+    </div>
+   
+    <div class="bloco" id="b1">
+
+    </div>
+    <div class="bloco" id="b2">
+        
+    </div>
+    <div class="bloco" id="b3">
+        
+    </div>
+
+
+</body>
+</html>
