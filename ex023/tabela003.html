@@ -8,11 +8,12 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(185, 217, 236);
+            background-color: rgb(201, 202, 202);
         }
         table{
             width: 500px;
-            border-collapse: collapse;     
+            border-collapse: collapse;
+            position: relative;     
         }
         caption{
             font-size: 1.5em;
@@ -21,6 +22,12 @@
             border: 1px solid black;
             padding: 10px;
             font-weight: bold;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(239, 239, 178);
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgb(167, 190, 228);
         }
         td,th{
             border: 1px solid black;
@@ -32,6 +39,11 @@
         thead{
             background-color: gray;
             color: white;
+        }
+        thead > tr >th{
+            position: sticky;
+            top: -1px;
+            background-color:gray;
         }
         tfoot{
             background-color: gray;
