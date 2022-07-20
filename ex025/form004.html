@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+         
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        img{
+            background-attachment: fixed;
+            
+        }
+        form{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: blueviolet;
+            border-radius: 5px;
+            display:inline-block;
+            width: 333px;
+            background-color: rgba(145, 145, 145, 0.39);
+            position: relative;
+            bottom: 800px;
+            
+        }
+        fieldset{
+            border-radius: 5px;
+            text-align: center;
+            width: 300px;
+            background-color: rgb(145, 145, 145 0.39);
+        }
+    </style>
+</head>
+<body>
+    
+    <img width="1920" height="973" src="imagem/s1.jpg" alt="Elevador">
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" minlength="3" maxlength="10" placeholder="Digite seu nome">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="E-mail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="telefone" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+            </p>
+        </fieldset>
+        <!--Estudar mais sobre Regex, expreções regulares.-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
