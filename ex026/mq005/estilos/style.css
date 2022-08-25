@@ -14,8 +14,21 @@ header > h1{
     padding: 10px;
     text-align: center;
 }
+.material-icons{
+      background-color: rgb(73, 73, 73);
+      color: white;
+      display: block;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+}
+.material-icons:hover{
+    background-color: white;
+    color: black;
+
+}
 menu{
-    display: block;
+    display: none;
 }
 menu > ul{
     list-style-type: none;
